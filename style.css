@@ -1,0 +1,76 @@
+        /* Стилизация заголовка и меню */
+        header {
+            text-align: center; /* Выравнивание содержимого заголовка по центру */
+        }
+
+        header img {
+            width: 50%; /* Ширина изображения на 100% от ширины родителя */
+            height: auto; /* Автоматическая высота для сохранения пропорций изображения */
+        }
+        
+    .content {
+        width: 50%; /* Установка ширины контента равной ширине изображения */
+        margin: auto; /* Центрирование блока */
+        color: black;
+        font-size: 18px;
+    }
+        
+        nav ul {
+            list-style-type: none; /* Убрать маркеры списка */
+            padding: 0; /* Убрать внутренние отступы списка */
+            margin: 0; /* Убрать внешние отступы списка */
+            display: flex; /* Расположить элементы горизонтально */
+            justify-content: center; /* Выравнивание элементов списка по центру */
+        }
+
+        nav ul li {
+            margin: 0 15px; /* Добавить небольшие отступы между элементами списка */
+        }
+
+        nav ul li a {
+            text-decoration: none; /* Убрать подчеркивание у ссылок */
+            color: black; /* Цвет текста для ссылок */
+            font-size: 20px; /* Увеличение размера шрифта */
+        }
+
+         nav a {
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    nav a.active {
+      font-weight: bold;
+    }
+   
+
+      
+        
+        .image-container {
+            text-align: center; /* Центрирование изображения */
+            margin-top: 20px;} /* Отступ сверху */
+            
+            
+        /* Добавление новых стилей */
+        .centered-link {
+            
+            margin-left: 630px; /* Отступ слева */
+            
+            
+
+            margin-top: 20px; /* Отступ сверху */
+            font-size: 20px; /* Размер шрифта */
+            /* можно добавить другие стили, если нужно */
+            }
+            
+    
+
+         h1 {
+    
+            font-family: Times New Roman;
+           }
+         
+        
+     

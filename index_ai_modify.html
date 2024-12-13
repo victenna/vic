@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Image Grid</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* General page layout */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Times New Roman, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            color: #333;
+        }
+
+        nav ul li a:hover {
+            background-color: #ddd;
+            border-radius: 4px;
+        }
+
+        /* Grid container for the images */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Default for PC: 4 images per row */
+            grid-column-gap: 10px;
+            grid-row-gap: 15px;
+            justify-content: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .grid-container img {
+            width: 200px; /* Default image size for PC */
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover effect for images */
+        .grid-container img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Media query for iPads and smaller devices */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 images per row on iPad */
+            }
+
+            .grid-container img {
+                width: 150px; /* Smaller image size for iPad */
+            }
+        }
+
+        /* Media query for very small devices like phones */
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr); /* 1 image per row on small devices */
+            }
+
+            .grid-container img {
+                width: 100%; /* Full width for images */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="Headerr.jpg" alt="Header">
+    <nav>
+        <ul>
+            <li><a href="index_home.html">Home</a></li>
+            <li><a href="index_papers.html">Papers</a></li>
+            <li><a href="index_patents.html">Patents</a></li>
+            <li><a href="index_books.html">Books</a></li>
+            <li><a href="index_prototypes.html">Prototypes</a></li>
+            <li><a href="index_pygame.html">Pygame</a></li>
+            <li><a href="index_lessons.html">Turtle Lessons</a></li>
+            <li><a href="index_turtle.html">Turtle Projects</a></li>
+            <li><a href="index_ai.html">AI Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Grid container for the images -->
+<div class="grid-container">
+    <a href="javascript:void(0);" onclick="openVideo('https://www.youtube.com/embed/VIDEO1_ID?autoplay=1')">
+        <img src="Images_AI/Image1.png" alt="Image 1">
+    </a>
+    <a href="javascript:void(0);" onclick="openVideo('https://www.youtube.com/embed/VIDEO2_ID?autoplay=1')">
+        <img src="Images_AI/Image2.png" alt="Image 2">
+    </a>
+    <a href="javascript:void(0);" onclick="openVideo('https://www.youtube.com/embed/VIDEO3_ID?autoplay=1')">
+        <img src="Images_AI/Image3.png" alt="Image 3">
+    </a>
+    <a href="javascript:void(0);" onclick="openVideo('https://www.youtube.com/embed/VIDEO4_ID?autoplay=1')">
+        <img src="Images_AI/Image4.png" alt="Image 4">
+    </a>
+    <a href="javascript:void(0);" onclick="openVideo('https://www.youtube.com/embed/VIDEO5_ID?autoplay=1')">
+        <img src="Images_AI/Image5.png" alt="Image 5">
+    </a>
+    <a href="javascript:void(0);" onclick="openVideo('https://www.youtube.com/embed/VIDEO6_ID?autoplay=1')">
+        <img src="Images_AI/Image6.png" alt="Image 6">
+    </a>
+    <a href="javascript:void(0);" onclick="openVideo('https://www.youtube.com/embed/VIDEO7_ID?autoplay=1')">
+        <img src="Images_AI/Image7.png" alt="Image 7">
+    </a>
+    <a href="javascript:void(0);" onclick="openVideo('https://www.youtube.com/embed/VIDEO8_ID?autoplay=1')">
+        <img src="Images_AI/Image8.png" alt="Image 8">
+    </a>
+</div>
+
+<!-- Your existing external JavaScript -->
+<script src="script.js"></script>  
+
+<!-- Inline JavaScript for opening videos -->
+<script>
+    function openVideo(videoUrl) {
+        window.open(videoUrl, '_blank', 'width=800,height=600');
+    }
+</script>
+
+</body>
+</html>
